@@ -7,6 +7,8 @@ import EditUserRoles from './Components/EditUserRoles';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import HomePage from './Components/Homepage';
+import UserRolesPage from './Components/UserRolesPage';
+import ManageRoles from './Components/ManageRoles';  // Import ManageRoles component
 
 const App = () => {
   const [submittedData, setSubmittedData] = useState([]);
@@ -25,6 +27,8 @@ const App = () => {
             <Route path="/add-user" element={<AddUserForm addUserData={addUserData} />} />
             <Route path="/add-role" element={<AddRoleForm addUserData={addUserData} />} />
             <Route path="/edit-roles" element={<EditUserRoles submittedData={submittedData} />} />
+            <Route path="/user-roles" element={<UserRolesPage />} />
+            <Route path="/manage-roles" element={<ManageRoles />} />  {/* Add the route for ManageRoles */}
           </Routes>
         </Container>
         <Footer />

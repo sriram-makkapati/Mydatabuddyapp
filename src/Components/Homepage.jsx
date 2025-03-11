@@ -30,10 +30,28 @@ const HomePage = () => {
         </Grid>
         <Grid item>
           <Paper elevation={3} sx={{ p: 2, width: 300, height: 150 }}>
-            <Typography variant="h5" gutterBottom>Edit User Roles</Typography>
+            <Typography variant="h5" gutterBottom>Manage Roles</Typography>
             <Typography variant="body2" gutterBottom>Edit or delete user roles.</Typography>
             <Button variant="contained" color="primary" onClick={() => navigate('/edit-roles')}>
               Edit Roles
+            </Button>
+          </Paper>
+        </Grid>
+        <Grid item>
+          <Paper elevation={3} sx={{ p: 2, width: 300, height: 150 }}>
+            <Typography variant="h5" gutterBottom>Tables</Typography>
+            <Typography variant="body2" gutterBottom>View user and role tables.</Typography>
+            <Button variant="contained" color="primary" onClick={() => navigate('/user-roles')}>
+              View Tables
+            </Button>
+          </Paper>
+        </Grid>
+        <Grid item>
+          <Paper elevation={3} sx={{ p: 2, width: 300, height: 150 }}>
+            <Typography variant="h5" gutterBottom>Manage User Roles</Typography>
+            <Typography variant="body2" gutterBottom>View, update, or delete user roles.</Typography>
+            <Button variant="contained" color="primary" onClick={() => navigate('/manage-roles')}>
+              Manage Roles
             </Button>
           </Paper>
         </Grid>
